@@ -1,0 +1,31 @@
+{
+  "name": "opentelemetry",
+  "version": "1.0.0",
+  "description": "OpenTelemetry module",
+  "main": "dist/tracing-sdk.js",
+  "types": "dist/tracing-sdk.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/exporter-jaeger": "^1.28.0",
+    "@opentelemetry/instrumentation-express": "^0.45.0",
+    "@opentelemetry/instrumentation-http": "^0.55.0",
+    "@opentelemetry/instrumentation-nestjs-core": "^0.42.0",
+    "@opentelemetry/resources": "^1.28.0",
+    "@opentelemetry/sdk-node": "^0.55.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0",
+    "install": "^0.13.0",
+    "npm": "^10.9.2",
+    "opentelemetry-instrumentation-sequelize": "^0.41.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.28.20",
+    "typescript": "^5.7.2"
+  }
+}
